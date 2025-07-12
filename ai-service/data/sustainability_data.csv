@@ -1,0 +1,11 @@
+ProductID,ProductName,Material,CarbonFootprintKg,Recyclable,AvgLifespanYears
+P001,Steel Water Bottle,Stainless Steel,2.1,Yes,5.0
+P002,Bamboo Toothbrush,Bamboo,0.3,Yes,0.5
+P003,Cotton Tote Bag,Organic Cotton,1.5,Yes,2.0
+P004,Reusable Straw,Silicone,0.1,Yes,3.0
+P005,Glass Lunchbox,Tempered Glass,1.8,Yes,4.0
+P006,Solar Lantern,Plastic & Solar Panel,3.0,Partially,3.0
+P007,Organic Shampoo Bar,Natural Ingredients,0.2,Yes,1.0
+P008,Biodegradable Phone Case,Bioplastic,0.5,Yes,1.5
+P009,Hemp Notebook,Hemp Paper,0.4,Yes,2.0
+P010,Compostable Garbage Bag,Cornstarch,0.1,Compostable,0.25
