@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import WalmartInventoryDashboard from "../retailerComponents/components/retailer-inventory-component";
 function RetailerDashboard({ user, onLogout }) {
   const [formData, setFormData] = useState({
     activity_id: "electricity-supply_grid-source_residual_mix",
@@ -58,6 +58,7 @@ function RetailerDashboard({ user, onLogout }) {
   };
 
   return (
+    <div>
     <div className="min-h-screen bg-gray-50 p-4">
       <div className="max-w-7xl mx-auto">
         <header className="flex justify-between items-center py-4 border-b border-gray-200">
@@ -318,6 +319,11 @@ function RetailerDashboard({ user, onLogout }) {
         </div>
       </div>
     </div>
+    <div>
+        <WalmartInventoryDashboard />
+    </div>
+    </div>
+
   );
 }
 
