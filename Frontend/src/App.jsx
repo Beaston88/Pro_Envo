@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import RetailerDashboard from "./Pages/RetailerDashboard";
+import RetailerDashboard from "./components/RetailerDashboard";
 import SupplierDashboard from "./components/SupplierDashboard";
 import SupplierBarcode from "./components/SupplierBarcode";
 import Scanner from "./components/Scanner";
