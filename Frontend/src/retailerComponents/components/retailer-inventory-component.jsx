@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react"
+import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import {
   Search,
   Trash2,
@@ -23,6 +24,7 @@ import {
   Zap,
   Target,
   Award,
+  QrCode,
 } from "lucide-react"
 
 // Import inventory data from external JSON file
@@ -200,11 +202,15 @@ export default function WalmartInventoryDashboard() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
-                <button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center">
+                <button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center cursor-pointer">
+                  <QrCode className="h-4 w-4 mr-2"/>
+                  <Link to="/scanner">Go to Scanner</Link>
+                </button>
+                <button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center cursor-pointer">
                   <Download className="h-4 w-4 mr-2" />
                   Export Report
                 </button>
-                <button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center">
+                <button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center cursor-pointer">
                   <Bell className="h-4 w-4 mr-2" />
                   Notifications
                 </button>

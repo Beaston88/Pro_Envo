@@ -4,7 +4,8 @@ import Login from "./components/Login"
 import Signup from "./components/Signup"
 import RetailerDashboard from "./components/RetailerDashboard"
 import SupplierDashboard from "./components/SupplierDashboard"
-
+import Scanner from "./components/Scanner"
+import SupplierBarcode from "./components/SupplierBarcode";
 function App() {
   const [user, setUser] = useState(null)
 
@@ -42,16 +43,28 @@ function App() {
     <Router>
       <Routes>
         {user.userType === "retailer" && (
+          <>
           <Route
             path="/"
             element={<RetailerDashboard user={user} onLogout={handleLogout} />}
           />
+           <Route
+              path="/scanner"
+              element={<Scanner user={user} />}
+            />
+            </>
         )}
         {user.userType === "supplier" && (
+          <>
           <Route
             path="/"
             element={<SupplierDashboard user={user} onLogout={handleLogout} />}
           />
+          <Route
+              path="/supplier-barcode"
+              element={<SupplierBarcode user={user} />}
+            />
+          </>
         )}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

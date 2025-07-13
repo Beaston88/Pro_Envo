@@ -100,7 +100,7 @@ const SupplierBarcode = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="max-w-6xl mt-5 mx-auto p-6 bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-3 gap-8">
       <div className="md:col-span-2">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Product Carbon Footprint Generator</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

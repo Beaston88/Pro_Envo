@@ -12,8 +12,10 @@ import {
   ShoppingCart,
   Truck,
   FileText,
+  QrCode
 } from "lucide-react"
 import DemandForecastingDashboard from "./DemandForecastingDashboard.jsx"
+import SupplierBarcode from "../components/SupplierBarcode.jsx"
 
 const SupplierDashboardComponent = ({user}) => {
   const [activeTab, setActiveTab] = useState("overview")
@@ -22,7 +24,7 @@ const SupplierDashboardComponent = ({user}) => {
   const menuItems = [
     { id: "overview", label: "Dashboard Overview", icon: Home },
     { id: "demand-forecasting", label: "Demand Forecasting", icon: TrendingUp },
-    { id: "inventory", label: "Inventory Management", icon: Package },
+    { id: "inventory", label: "Carbon Score QR ", icon: QrCode },
     { id: "orders", label: "Order Management", icon: ShoppingCart },
     { id: "suppliers", label: "Supplier Network", icon: Truck },
     { id: "reports", label: "Reports & Analytics", icon: FileText },
@@ -34,6 +36,8 @@ const SupplierDashboardComponent = ({user}) => {
     switch (activeTab) {
       case "demand-forecasting":
         return <DemandForecastingDashboard />
+      case "inventory":
+        return <SupplierBarcode/>
       case "overview":
         return (
           <div className="p-6">
