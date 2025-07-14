@@ -7,20 +7,20 @@
 4. Now go to frontend folder open temrinal do "npm install" and then do "npm run dev"
 5. Now login and enjoy the webapp.
 
-# 📌 Overview:
+## 📌 Overview:
 Sustainable Future is an AI-powered platform designed to foster sustainable practices in supply chain management. It connects Suppliers and Retailers, enabling them to make eco-friendly, data-driven decisions using demand forecasting, product sustainability scoring, and intelligent inventory management.
 
-# 🎯 Project Objective:
+## 🎯 Project Objective:
 To create a sustainable supply chain ecosystem by helping suppliers reduce overproduction and empowering retailers to stock environmentally responsible products, thus contributing to a greener future.
 
 ## 🛠️ Key Features
-# 🔷 Supplier Portal
-1️⃣ Demand Forecasting (ML-Powered)
-2️⃣ Sustainability QR Code Generator
+🔷 Supplier Portal
+1️. Demand Forecasting (ML-Powered)
+2. Sustainability QR Code Generator
 
-# 🔷 Retailer Portal
-1️⃣ AI-Based Sustainability Scanner
-2️⃣ Smart Inventory Management
+🔷 Retailer Portal
+1️. AI-Based Sustainability Scanner
+2️. Smart Inventory Management
 
 1. Monitors stock in real-time.
 2. Notifies retailers of:
